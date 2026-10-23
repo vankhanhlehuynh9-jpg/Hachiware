@@ -71,6 +71,8 @@ else:
 
 # Giao diện chính
 st.title("🐱 Trò Chơi Chải Lông Mèo & Bốc Quẻ May Mắn")
+st.audio("aaf63b4ec0940a2a6a4ad5f7b9786871.mp4", autoplay=True, loop=True)
+
 
 # Chia tab cho gọn gàng
 tab1, tab2, tab3 = st.tabs(["🎮 Game Chải Lông", "🛒 Cửa Hàng Vật Phẩm", "📜 Bốc Quẻ May Mắn"])
@@ -92,9 +94,11 @@ with tab1:
     with col_m2:
         if st.session_state.cat_state == "back":
             st.markdown("<h1 style='text-align: center; font-size: 100px;'>🐈‍⬛</h1>", unsafe_allow_html=True)
+            st.image("7c59985cb967810af105286709184ba2.jpg", use_container_width=True)
             st.markdown("<p style='text-align: center; color: green;'><b>Mèo đang quay lưng (An toàn để chải!)</b></p>", unsafe_allow_html=True)
         else:
             st.markdown("<h1 style='text-align: center; font-size: 100px;'>🐈</h1>", unsafe_allow_html=True)
+            st.image("6b73b5cf4a17da8304ac0ac0d3e19642.jpg", use_container_width=True)
             st.markdown("<p style='text-align: center; color: red;'><b>⚠️ MÈO ĐANG QUAY MẶT LẠI! DỪNG CHẢI NGAY!</b></p>", unsafe_allow_html=True)
 
     # Hiển thị tài nguyên
